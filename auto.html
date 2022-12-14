@@ -7,46 +7,18 @@
     <title>autosell</title>
   </head>
   <body>
+    <H1>Autosell</H1>
     <form>
       <select
-        name="categories"
-        id="TYPE"
-        data-field="category"
-        aria-label="тип транспоту"
-        data-placeholder="любой"
-        class="e-form _grey"
-      >
-        <label for="Type">кузов</label>
-        <input type="search" id="Type" />
-        <option selected="selected" value="1">мото</option>
-        <option value="1">мото</option>
-        <option value="2">грузові</option>
-        <option value="3">автобуси</option>
-        <option value="4">легкові</option>
-        <option value="5">сельхозтехника</option>
-      </select>
-    </form>
-  </body>
-</html>
-<select
-  id="categories"
-  name="category_id"
-  data-field="category"
-  aria-label="Тип транспорта"
-  data-placeholder="Любой"
-  class="e-form _grey"
+
 >
-  <option value="0">Любой</option>
-  <option selected="selected" value="1">Легковые</option>
+  <option value="0">тип авто</option>
+  <option  value="1">Легковий</option>
   <option value="2">Мото</option>
-  <option value="6">Грузовики</option>
-  <option value="5">Прицепы</option>
-  <option value="4">Спецтехника</option>
-  <option value="10">Сельхозтехника</option>
-  <option value="7">Автобусы</option>
-  <option value="3">Водный транспорт</option>
-  <option value="9">Воздушный транспорт</option>
-  <option value="8">Автодома</option>
+  <option value="6">Грузовий</option>
+  <option value="10">Сельхозтехніка</option>
+  <option value="7">Автобуси</option>
+
 </select>
 
 <select id="brand">
@@ -66,48 +38,136 @@
   <option value="11">Subaru</option>
   <option value="12">Lexus</option>
 </select>
-<select id="yers-1">
-  <option value="0">рік, від</option>
-  <option value="1">2022</option>
-  <option value="2">2021</option>
-  <option value="3">2020</option>
-  <option value="4">2019</option>
-  <option value="5">2018</option>
-  <option value="6">2017</option>
-  <option value="7">2016</option>
-  <option value="8">2015</option>
-  <option value="9">2014</option>
-  <option value="10">2013</option>
-</select>
-<select name="yers2">
-  <option value="0">Рік, до</option>
-  <option value="">2022</option>
-  <option value="">2021</option>
-  <option value="">2020</option>
-  <option value="">2019</option>
-  <option value="">2018</option>
-  <option value="">2017</option>
-  <option value="">2016</option>
-  <option value="">2015</option>
-  <option value="">2014</option>
-  <option value="">2013</option>
-</select>
+<div class="yers">
+    <p>
+       <select id="yers-1">
+    <option value="0">рік, від</option>
+    <option value="1">2022</option>
+    <option value="2">2021</option>
+    <option value="3">2020</option>
+    <option value="4">2019</option>
+    <option value="5">2018</option>
+    <option value="6">2017</option>
+    <option value="7">2016</option>
+    <option value="8">2015</option>
+    <option value="9">2014</option>
+    <option value="10">2013</option>
+  </select>
+  <select name="yers2">
+    <option value="0">Рік, до</option>
+    <option value="">2022</option>
+    <option value="">2021</option>
+    <option value="">2020</option>
+    <option value="">2019</option>
+    <option value="">2018</option>
+    <option value="">2017</option>
+    <option value="">2016</option>
+    <option value="">2015</option>
+    <option value="">2014</option>
+    <option value="">2013</option>
+  </select> 
+    </p>
+  
+</div>
 
-<select id="at_country" aria-label="Країна">
-  <option value="0" selected="selected">Країна виробник</option>
-  <option value="276">Германия</option>
-  <option value="392">Япония</option>
-  <option value="250">Франция</option>
-  <option value="840">США</option>
-  <option value="408">Корея</option>
-  <option value="203">Чехия</option>
-  <option value="804">Украина</option>
-  <option value="380">Италия</option>
-  <option value="276">Германия</option>
-  <option value="380">Италия</option>
-  <option value="616">Польша</option>
-  <option value="620">Португалия</option>
-  <option value="840">США</option>
-  <option value="804">Украина</option>
-  <option value="246">Финляндия</option>
-</select>
+<div class="cantry">
+    <p>
+        <select id="at_country" aria-label="Країна">
+    <option value="0" selected="selected">Країна виробник</option>
+    <option value="276">Германия</option>
+    <option value="392">Япония</option>
+    <option value="250">Франция</option>
+    <option value="840">США</option>
+    <option value="408">Корея</option>
+    <option value="203">Чехия</option>
+    <option value="804">Украина</option>
+    <option value="380">Италия</option>
+    <option value="276">Германия</option>
+    <option value="380">Италия</option>
+    <option value="616">Польша</option>
+    <option value="620">Португалия</option>
+    <option value="840">США</option>
+    <option value="804">Украина</option>
+    <option value="246">Финляндия</option>
+  </select>  
+    </p>
+
+</div>
+<section class="stan">
+  <h3>Стан</h3>
+  <input type="checkbox" name="стан" id="stan" />
+  <label for="stan">Без пошкоджень</label>
+  <input type="checkbox" name="#" id="stan" />
+  <label for="stan">З пошкодженнями</label>
+  <p>
+    <input type="checkbox" name="bankir" id="bank" />
+    <label for="bank">взято в кредит</label>
+    <input type="checkbox" name="bankir" id="bank" />
+    <label for="bank"> не взято в кредит</label>
+  </p>
+  <p>
+    <input type="checkbox" name="custom" id="customs" />
+    <label for="bank">розмитнена</label>
+    <input type="checkbox" name="custom" id="customs" />
+    <label for="bank">нерозмитнена</label>
+  </p>
+</section>
+<section>
+  <h3>Технічні характеристики</h3>
+
+  <p><b>Паливо</b> </p>
+  <span>
+    <input type="checkbox" name="1" id="b1" />
+    <label for="b1" class="radio-btn">бензин</label>
+  </spam>
+
+  <span>
+    <input type="checkbox" name="2" id="b2" />
+    <labal>дизель</labal>
+  </span>
+  <span>
+    <input type="checkbox" name="3" id="b3" />
+    <labal>газ</labal>
+  </span>
+  <p><b>Тип коробки передач</b> </p>
+  <input type="checkbox" name="1" id="at1">
+  <label for="at1">автоматична</label>
+  <input type="checkbox" name="2" id="at2">
+  <label for="at2">механічна</label>
+  <input type="checkbox" name="3" id="at3">
+  <label for="at3">робот</label>
+  <input type="checkbox" name="4" id="at4">
+  <label for="at4">вариатор</label>
+</section>
+<div class="color">
+    <p><b>Колір</b> </p>
+    <select name="col" id="color">
+        <option value="0">Колір</option>
+        <option value="1">білий</option>
+        <option value="2">чорний</option>
+        <option value="3">зелений</option>
+        <option value="4">червоний</option>
+        <option value="5">синій</option>
+        <option value="6">жовтий</option>
+        <option value="7">рожевий</option>
+        <option value="8">сірий</option>
+        <option value="9">фіолетовий</option>
+    </select>
+</div>
+<div class="com">
+    <p><b>Комфорт</b> </p>
+    <input type="checkbox" name="1" id="a1">
+    <label for="a1">Кондиціонер</label>
+    <input type="checkbox" name="2" id="b2">
+    <label for="b2">шкіряний салон</label>
+    <input type="checkbox" name="3" id="c3">
+    <label for="c3">люк</label>
+    <input type="checkbox" name="4" id="d4">
+    <label for="d4">підігрів сидінь</label>
+    <input type="checkbox" name="5" id="f5">
+    <label for="f5">клімат контроль</label>
+</div>
+    </form>
+  </body>
+</html>
+
