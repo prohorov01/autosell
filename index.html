@@ -7,42 +7,32 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="https://fom.in.ua/echo" autocomplete="off" method="post">
-      <!-- <fieldset>
-        <legend>Реєстрація</legend>
-      </fieldset> -->
-      <div>
-        <label for="Email" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="Email"
-          aria-describedby="emailHelp"
-          required
-        />
-      </div>
-      <div>
-        <label for="Password1" class="form-label">Пароль</label>
+    <form
+      action="https://fom.in.ua/echo"
+      autocomplete="on"
+      method="post"
+      target="_blank"
+      novalidate
+    >
+      <label for="Email">Email</label>
+      <input type="email" required />
+      <p>
+        <label for="Password1">Пароль</label>
         <input
           type="password"
           autocomplete="current-password"
-          class="form-control"
           id="Password1"
           required
         />
-      </div>
-      <div>
-        <label for="Password2" class="form-label">Підтвердження пароля</label>
-        <input
-          type="password"
-          autocomplete="current-password"
-          class="form-control"
-          id="Password2"
-          required
-        />
-      </div>
-
-      <button type="submit" class="btm btm-secondary">Реєстрація</button>
+      </p>
+      <label for="Password2">Підтвердження пароля</label>
+      <input
+        type="password"
+        autocomplete="current-password"
+        id="Password2"
+        required
+      />
+      <button type="submit">Реєстрація</button>
     </form>
   </body>
 </html>
